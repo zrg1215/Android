@@ -666,9 +666,8 @@ public class FileUtil {
      * 获取sd卡是否存在
      **/
     public static boolean checkSDCardExist() {
-        boolean sdCardExist = Environment.getExternalStorageState().equals(
+        return Environment.getExternalStorageState().equals(
                 Environment.MEDIA_MOUNTED);
-        return sdCardExist;
     }
 
     /**
