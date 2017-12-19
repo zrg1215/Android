@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 如果你不手动自己去修改toolbar背景色的话，它就是默认的toolbar背景色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 状态栏底色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 各控制元件被选中时的颜色(比如：checkbox、switch、菜单 或是 radio) -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--各个控制控件的默认颜色-->
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <!-- actionBar的高度 -->
+        <item name="actionBarSize">56dp</item>
+        <!-- actionBar的返回图标-->
+        <item name="homeAsUpIndicator">@drawable/navbar_back_white</item>
+        <!--加android:，仅在21以上有效-->
+        <item name="editTextColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/clr_b7b9bc</item>
+        <!--Menu字体颜色-->
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <!--Menu字体大小-->
+        <item name="android:textSize">16sp</item>
+
+        <item name="titleTextColor">@android:color/black</item>
+
+        <item name="actionMenuTextAppearance">@style/MyMenuTextAppearance</item>
+
+    </style>
+
+    <style name="MyMenuTextAppearance" parent="android:TextAppearance.Holo.Widget.ActionBar.Menu">
+        <!-- 此处需要 android-14 -->
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <!-- ActionSheet  从底部 进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_bottom_out</item>
+    </style>
+
+    <!-- 背景全透明 -->
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

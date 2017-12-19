@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ChoosePhoto</string>
+
+    <!--通用-->
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="progress_dialog_loading">处理中，请稍候&#8230;</string>
+
+    <!--选择图片-->
+    <string name="select_image_album">选择相册</string>
+    <string name="select_image_no_one">您还未选择照片</string>
+    <string name="select_image_sdcard_error">暂无外部存储卡</string>
+    <string name="select_image_delete_image">要删除这张照片吗</string>
+    <string name="select_image_all_image">全部照片</string>
+    <string name="select_image_preview_number">确定(%1$s/%2$s)</string>
+    <string name="select_image_preview">预览</string>
+    <string name="select_image_max_number">图片最多选择%s张</string>
+    <string name="select_image_max_numbers">图片最多选择%s张</string>
+
+    <!--选择图片***其他提示-->
+    <string name="not_found_photo">图片没找到</string>
+    <string name="modify_avatar_save">设为头像</string>
+</resources>
