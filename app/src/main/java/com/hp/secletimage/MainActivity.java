@@ -1,23 +1,18 @@
 package com.hp.secletimage;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
 
 import com.hp.choosephoto.AlbumActivity;
 import com.hp.choosephoto.GalleryActivity;
-import com.hp.choosephoto.base.BaseActivity;
 import com.hp.choosephoto.utils.ToastUtils;
+import com.hp.secletimage.base.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +28,6 @@ public class MainActivity extends BaseActivity implements
 
     private ImageAdapter mAdapter;
     private List<String> mImagePaths;
-
     private boolean mIsDeleteImage;//选中照片、预览（可删除）
 
     @Override
@@ -128,6 +122,9 @@ public class MainActivity extends BaseActivity implements
     //endregion
 
 
+    /**
+     * 选择照片
+     */
     private void startSelectPhoto() {
         mIsDeleteImage = false;
         if (mImagePaths != null && mImagePaths.size() < MAX_IMAGES) {
