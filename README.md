@@ -1,4 +1,4 @@
-# Android
+![image](）
 
 <p>此demo用于选择本地照片、拍照。
 <p>demo结构：app->demo入口，choosephoto->移植好的module
