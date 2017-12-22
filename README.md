@@ -1,4 +1,4 @@
-![image](）
+![image](https://github.com/zrg1215/SelectImage/blob/master/gif/test.gif）
 
 <p>此demo用于选择本地照片、拍照。
 <p>demo结构：app->demo入口，choosephoto->移植好的module
